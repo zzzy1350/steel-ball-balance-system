@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-07-25T12:29:27.529855+00:00",
+  "nncase": "2.9.0",
+  "nncase_kpu": "2.9.0",
+  "target": "k230",
+  "onnx": "C:\\Users\\zzzy\\Desktop\\findball320\\k230_artifacts\\steel_ball_yolov8n_320_new.onnx",
+  "onnx_sha256": "53d51d83513b14b18d819d605d17a1ab61569532e40cd542d1e93b6d54d181c3",
+  "onnx_input": {
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      320,
+      320
+    ],
+    "type": "uint8_external"
+  },
+  "onnx_output": {
+    "name": "output0",
+    "shape": [
+      1,
+      5,
+      2100
+    ]
+  },
+  "preprocess": {
+    "layout": "NCHW",
+    "color": "RGB",
+    "input_range": [
+      0,
+      255
+    ],
+    "mean": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "std": [
+      255.0,
+      255.0,
+      255.0
+    ],
+    "letterbox_value": 114,
+    "camera_size": [
+      640,
+      384
+    ],
+    "camera_fit": "crop",
+    "board_geometry": {
+      "source_size": [
+        640,
+        384
+      ],
+      "padded_source_size": [
+        640,
+        640
+      ],
+      "target_size": [
+        320,
+        320
+      ],
+      "source_pad": [
+        0,
+        0,
+        128,
+        128
+      ],
+      "scale_x": 0.5,
+      "scale_y": 0.5
+    }
+  },
+  "ptq": {
+    "samples": 32,
+    "seed": 42,
+    "quant_type": "uint8",
+    "weight_quant_type": "uint8",
+    "calibrate_method": "Kld",
+    "finetune_weights_method": "UseSquant",
+    "images": [
+      "ball_0105.jpeg",
+      "ball_0074.jpeg",
+      "ball_0079.jpeg",
+      "ball_0013.jpg",
+      "ball_0045.jpg",
+      "ball_0038.jpg",
+      "ball_0002.jpg",
+      "ball_0086.jpeg",
+      "ball_0022.jpg",
+      "ball_0075.jpeg",
+      "ball_0080.jpeg",
+      "ball_0016.jpg",
+      "ball_0066.png",
+      "ball_0093.jpeg",
+      "ball_0064.png",
+      "ball_0111.jpeg",
+      "ball_0062.png",
+      "ball_0053.png",
+      "ball_0083.jpeg",
+      "ball_0042.jpg",
+      "ball_0069.png",
+      "ball_0091.jpeg",
+      "ball_0058.png",
+      "ball_0044.jpg",
+      "ball_0100.jpeg",
+      "ball_0085.jpeg",
+      "ball_0114.jpeg",
+      "ball_0011.jpg",
+      "ball_0049.jpg",
+      "ball_0096.jpeg",
+      "ball_0099.jpeg",
+      "ball_0060.png"
+    ]
+  },
+  "kmodel": "C:\\Users\\zzzy\\Desktop\\findball320\\k230_artifacts\\steel_ball_yolov8n_320_new.kmodel",
+  "kmodel_bytes": 3349808,
+  "kmodel_sha256": "3ca4a56dcdf499d0af9e662fa40a4f82b7bf22978c37bda258729f22d6dcecb8"
+}
